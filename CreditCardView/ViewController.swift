@@ -9,10 +9,7 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController, UITextFieldDelegate, CardViewDelegate {
-    private var previousTextFieldContent: String?
-    private var previousSelection: UITextRange?
-    var yourTextField: UITextField?
+class ViewController: UIViewController, CardViewDelegate {
     var cardView: CardInputView = CardInputView(frame: .zero)
 
     override func viewDidLoad() {
